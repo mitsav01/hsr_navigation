@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>hsr_navigation</name>
   <version>0.0.0</version>
   <description>The hsr_navigation package</description>
@@ -8,6 +8,11 @@
   <maintainer email="hawkin@uni-bremen.de">Alina Hawkin</maintainer>
 	
   <license>TODO</license>
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 
 </package>

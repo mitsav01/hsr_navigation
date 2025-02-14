@@ -1,12 +1,19 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(hsr_navigation)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake REQUIRED)
+find_package(rclpy REQUIRED)
 
-catkin_package()
-
-include_directories()
-
-catkin_install_python(PROGRAMS src/global_pose_publisher.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# Install directories (if there are specific resources to install)
+install(DIRECTORY launch map src
+  DESTINATION share/${PROJECT_NAME}
 )
+
+
+# Install Python script
+install(PROGRAMS
+  src/global_pose_publisher.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+ament_package()
