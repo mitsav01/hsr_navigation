@@ -9,7 +9,6 @@ install(DIRECTORY launch map src
   DESTINATION share/${PROJECT_NAME}
 )
 
-
 # Install Python script
 install(PROGRAMS
   src/global_pose_publisher.py

@@ -2,7 +2,7 @@
 <package format="3">
   <name>hsr_navigation</name>
   <version>0.0.0</version>
-  <description>The hsr_navigation package</description>
+  <description>The hsr_navigation package_in_ros2</description>
 
   <maintainer email="hassouna@uni-bremen.de">Vanessa Hassouna</maintainer>
   <maintainer email="hawkin@uni-bremen.de">Alina Hawkin</maintainer>
